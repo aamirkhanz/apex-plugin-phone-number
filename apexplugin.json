@@ -1,0 +1,48 @@
+{
+  "name": "Phone Number",
+  "version": "1.0",
+  "description": "<p>A phone field with a country list and flags that formats and checks numbers for every country.</p><p>Countries: flags, a searchable list, an initial country (or the browser's), only some countries, and countries listed first. Typing + and a country code picks the country. Numbers: formatted while typing as each country writes them, checked with Google's libphonenumber rules for length and kind (mobile, landline), and stored in one format: E.164 (+447400123456), international or national. Feedback: a hint under the field with the kind of number and the country, or what is wrong (too short, too long, not a mobile number). Value Required and invalid numbers are reported before the page is submitted, and checked again on the server.</p><p>Requires Oracle APEX 26.2 or later. Documentation, updates and more plug-ins: https://www.techrevx.com</p>",
+  "keywords": [
+    "oracle",
+    "apex",
+    "plugin",
+    "techrevx",
+    "phone",
+    "telephone",
+    "international",
+    "e.164",
+    "validation",
+    "flags",
+    "intl-tel-input"
+  ],
+  "homepage": "https://github.com/aamirkhanz/apex-plugin-phone-number",
+  "bugs": {
+    "url": "https://github.com/aamirkhanz/apex-plugin-phone-number/issues"
+  },
+  "license": "MIT",
+  "author": {
+    "name": "TechRevX",
+    "url": "https://www.techrevx.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/aamirkhanz/apex-plugin-phone-number.git"
+  },
+  "oracle": {
+    "versions": [
+      "19c",
+      "21c",
+      "23ai"
+    ],
+    "apex": {
+      "versions": [
+        "26.2"
+      ],
+      "plugin": {
+        "internalName": "COM.TECHREVX.PHONE_INPUT",
+        "type": "item",
+        "previewImage": "https://raw.githubusercontent.com/aamirkhanz/apex-plugin-phone-number/main/screenshots/preview.png"
+      }
+    }
+  }
+}

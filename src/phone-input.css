@@ -1,0 +1,53 @@
+/* Phone Number item plug-in (TechRevX, www.techrevx.com): intl-tel-input in Universal Theme colors */
+
+/* the flag sprites are plugin files next to this stylesheet */
+.iti {
+  --iti-path-flags-1x: url("flags.webp");
+  --iti-path-flags-2x: url("flags@2x.webp");
+  --iti-border-color: var(--ut-component-border-color, rgba(0, 0, 0, .14));
+  --iti-hover-color: color-mix(in srgb, var(--ut-palette-primary, #3442a8) 9%, transparent);
+  --iti-icon-color: var(--ut-component-text-muted-color, #6b7080);
+  /* the background of the country list panel */
+  --iti-country-selector-bg: var(--ut-component-background-color, #fff);
+}
+
+.t-Form-itemWrapper > .tx-Phone,
+.tx-Phone { display: block; flex: 1 1 auto; width: 100%; min-width: 0; }
+.tx-Phone .tx-Phone-input { width: 100%; }
+.tx-Phone .iti__country-container { border-radius: var(--a-field-input-border-radius, 6px) 0 0 var(--a-field-input-border-radius, 6px); }
+.tx-Phone .iti__selected-country:focus-visible { outline: 2px solid var(--ut-palette-primary, #3442a8); outline-offset: -2px; }
+.tx-Phone .iti__selected-dial-code { color: var(--ut-component-text-default-color, #1f2333); font-size: var(--a-field-input-font-size, .875rem); }
+
+/* the country list: a panel under the field, or full screen on phones */
+.iti__country-selector { color: var(--ut-component-text-default-color, #1f2333); }
+.iti--inline-country-selector .iti__country-selector {
+  border-radius: 10px;
+  box-shadow: 0 14px 36px rgba(16, 19, 34, .16);
+  overflow: hidden;
+}
+.iti--fullscreen-popup .iti__country-selector { border-radius: 12px; overflow: hidden; }
+.iti__search-input {
+  padding: 9px 12px 9px 34px;
+  border: 0;
+  border-bottom: 1px solid var(--ut-component-border-color, rgba(0, 0, 0, .12));
+  background: transparent;
+  color: inherit;
+  font: inherit;
+  font-size: 14px;
+}
+.iti__country-selector .iti__search-input:focus,
+.iti__country-selector .iti__search-input:focus-visible { outline: none; border: 0; box-shadow: none; }
+.iti__search-input-wrapper:focus-within { box-shadow: inset 0 -2px 0 var(--ut-palette-primary, #3442a8); }
+.iti__country { padding: 8px 12px; font-size: 14px; }
+.iti__country.iti__highlight { background: var(--iti-hover-color); }
+.iti__dial-code { color: var(--ut-component-text-muted-color, #6b7080); }
+
+/* hint under the field */
+.tx-Phone-hint { display: flex; align-items: center; gap: 6px; margin: 5px 0 0; color: var(--ut-component-text-muted-color, #6b7080); font-size: 12.5px; line-height: 1.4; }
+.tx-Phone-hint[hidden] { display: none; }
+.tx-Phone-hint.is-valid { color: #11795a; }
+.tx-Phone-hint.is-valid::before { content: "\2713"; font-weight: 700; }
+.tx-Phone-hint.is-error { color: #b4232f; }
+.tx-Phone-input[aria-invalid="true"] { border-color: #b4232f !important; }
+
+.tx-Phone-display a { color: inherit; }
