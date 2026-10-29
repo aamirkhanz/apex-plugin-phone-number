@@ -2,16 +2,15 @@
 
 A phone field with a country list and flags that formats and checks numbers for every country.
 
-![Phone Number](screenshots/preview.png)
+[![Live demo](https://img.shields.io/badge/Live_demo-0f7b72?style=for-the-badge)](https://oracleapex.com/ords/r/aamirkhanz/plugins/phone-number) &nbsp; Sign in as `demo` with the password `Demo`.
 
-**[Live demo](https://oracleapex.com/ords/r/aamirkhanz/plugins/phone-number)**: sign in as `demo` with the password `Demo`.
+![Phone Number](screenshots/preview.png)
 
 | | |
 |---|---|
 | **Type** | Item plug-in |
 | **Internal name** | `COM.TECHREVX.PHONE_INPUT` |
 | **Version** | 1.0 |
-| **Live demo** | [oracleapex.com/ords/r/aamirkhanz/plugins/phone-number](https://oracleapex.com/ords/r/aamirkhanz/plugins/phone-number) (user `demo`, password `Demo`) |
 | **Requires** | Oracle APEX 26.2 or later |
 | **License** | MIT |
 
